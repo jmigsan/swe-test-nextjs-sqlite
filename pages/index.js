@@ -15,7 +15,7 @@ import styles from '../styles/Home.module.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -72,7 +72,9 @@ export default function Home() {
       </main>
     </>
   );
-}
+};
+
+export default Home;
 
 const Illustration = (props) => {
   return (

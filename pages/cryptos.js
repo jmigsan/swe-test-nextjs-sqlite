@@ -16,7 +16,7 @@ const Cryptocurrencies = () => {
       const response = await axios.put(
         'http://localhost:3000/api/addbitcoin/2'
       );
-      if (response.status === 200) {
+      if (response.ok) {
         alert('Bitcoin successfully added. Check your portfolio.');
       } else {
         alert('Error');
@@ -31,7 +31,7 @@ const Cryptocurrencies = () => {
       const response = await axios.put(
         'http://localhost:3000/api/addethereum/2'
       );
-      if (response.status === 200) {
+      if (response.ok) {
         alert('Ethereum successfully added. Check your portfolio.');
       } else {
         alert('Error');
@@ -44,7 +44,7 @@ const Cryptocurrencies = () => {
   const dogeClicked = async () => {
     try {
       const response = await axios.put('http://localhost:3000/api/adddoge/2');
-      if (response.status === 200) {
+      if (response.ok) {
         alert('Dogecoin successfully added. Check your portfolio.');
       } else {
         alert('Error');
